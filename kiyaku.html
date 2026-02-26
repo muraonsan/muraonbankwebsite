@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>村音バンク諸規定</title>
+    <link rel="icon" href="favicon.ico">
     <style>
         :root {
             --main-color: #333;
@@ -55,6 +56,37 @@
     </style>
 </head>
 <body>
+
+    <div class="watermark-layer">
+    <img src="logo.svg" alt="Muraon Bank Logo" class="watermark-img">
+</div>
+
+<style>
+    /* 透かしレイヤーの固定設定 */
+    .watermark-layer {
+        position: fixed;      /* スクロールしても位置を固定 */
+        top: 0;
+        left: 0;
+        width: 100vw;         /* 画面幅いっぱい */
+        height: 100vh;        /* 画面高さいっぱい */
+        display: flex;
+        justify-content: center; /* 左右中央 */
+        align-items: center;     /* 上下中央 */
+        z-index: -100;        /* 確実に最背面へ（他の要素より背後） */
+        pointer-events: none; /* 画像が邪魔をしてクリックや選択ができないのを防ぐ */
+        overflow: hidden;
+    }
+
+    .watermark-img {
+        width: 60%;           /* 画面に対する画像のサイズ（適宜調整） */
+        max-width: 600px;     /* 大きくなりすぎないように制限 */
+        opacity: 0.2;        /* 透過度：0.04(4%)程度にすると「透かし」らしくなります */
+        user-select: none;    /* 画像を選択不可にする */
+        -webkit-user-drag: none; /* ドラッグ不可 */
+        /* もしロゴの色を黒っぽく沈ませたい場合は以下を有効に */
+        /* filter: grayscale(1) contrast(0.5); */
+    }
+</style>
 
     <header>
         <h1>村音バンク諸規定/MURAON BANK Regulations</h1>

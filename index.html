@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>村音バンク公式サイト</title>
+    <link rel="icon" ref="icon.png">
     <style>
         :root {
             --main-color: #333;
@@ -51,6 +52,34 @@
             transform-origin: left top;
             line-height: 1;
         }
+
+        /* ここからにゅーすらん*/
+        .news-container {
+    width: 80%;
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+
+.news-list {
+    list-style: none; /* ドットを消す */
+    padding: 0;
+}
+
+.news-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc; /* 下線 */
+}
+
+.date {
+    color: #666;
+    margin-right: 15px;
+    font-size: 0.9em;
+}
+
+.content {
+    color: #333;
+}
+
     </style>
 </head>
 <body>
@@ -66,9 +95,29 @@
             <p>
                 基本利息ゼロ<span class="trap-note">(※1)</span>でご融資させていただいております。ぜひご利用ください。<br>
                 ご利用は積極的に！あと計画的にお願いいたします。<span class="trap-note">(※2)</span>
-                融資契約を結んだ時点で弊社の利用規約など諸規定<span class="trap-note">(※3)</span>に同意したものとみなします。いかなる”ご意見”も受け付けません。
+                融資契約を結んだ時点で弊行の<a href="kiyaku.html">利用規約など諸規定</a><span class="trap-note">(※3)</span>に同意したものとみなします。いかなる”ご意見”も受け付けません。
             </p>
         </section>
+
+        <div class="news-container">
+    <p><b>―― Notice from Muraon Bank / 当行からのお知らせ ――</b></p>
+    <p>最新のお知らせ５件を掲出しています</p>
+    <ul class="news-list">
+        <li>
+            <span class="date">2026.02.26</span>
+            <span class="content">規約を一部改訂しました。<a href="kiyaku.html">→Check</a> </span>
+        </li>
+        <li>
+            <span class="date">2026.02.22</span>
+            <span class="content">規約を一部改訂しました。<a href="kiyaku.html">→Check</a> </span>
+        </li>
+        <li>
+            <span class="date">2026.02.20</span>
+            <span class="content">Webサイトを公開しました。</span>
+        </li>
+    </ul>
+</div>
+
     </main>
 
     <footer class="footer-clauses">
